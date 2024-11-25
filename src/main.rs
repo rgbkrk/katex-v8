@@ -52,6 +52,8 @@ pub fn inject_katex<'a>(
     context: v8::Local<'a, v8::Context>,
     scope: &mut v8::ContextScope<'a, v8::HandleScope<'_>>,
 ) -> Result<v8::Local<'a, v8::Object>, Error> {
+    // Note: I'd love to use the ESM, but then we'd have to setup module loading.
+    // This is simpler for the moment to just load as a global `katex`.
     let katex_src = include_str!("../vendor/katex.min.js").to_v8_string(scope);
 
     v8::Script::compile(scope, katex_src, None)
