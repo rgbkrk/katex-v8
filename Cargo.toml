@@ -8,3 +8,6 @@ repository = "https://github.com/rgbkrk/katex-v8"
 
 [dependencies]
 v8 = "130.0.1"
+[[bin]]
+name = "katex-v8"
+path = "src/main.rs"
