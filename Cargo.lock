@@ -138,6 +138,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "katex-v8"
+version = "0.0.1"
+dependencies = [
+ "v8",
+]
+
+[[package]]
 name = "libc"
 version = "0.2.164"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -322,13 +329,6 @@ dependencies = [
  "once_cell",
  "paste",
  "which",
-]
-
-[[package]]
-name = "v8-katex"
-version = "0.1.0"
-dependencies = [
- "v8",
 ]
 
 [[package]]
