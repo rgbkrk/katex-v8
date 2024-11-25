@@ -1,0 +1,10 @@
+[package]
+name = "v8-katex"
+version = "0.1.0"
+edition = "2021"
+description = "KaTeX bindings that use the v8 engine"
+license = "MIT"
+repository = "https://github.com/rgbkrk/v8-katex"
+
+[dependencies]
+v8 = "130.0.1"
